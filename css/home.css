@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+h6 {
+    font-size: 14px;
+    font-weight: 900;
+    color: #be1e2d;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/*********************
+header
+*********************/
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E52818;
+    padding: 0 9%;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 49px;
+}
+
+header .logo a {
+    color: #EBEAE3;
+    font-family: "Hestina", sans-serif;
+    font-size: 2.4em;
+}
+
+#btn-menu {
+    padding: 0 4px;
+    cursor: pointer;
+    background: #FF9E19;
+    padding: 10px 11px;
+    border-radius: 50%;
+}
+
+#btn-menu>div {
+    display: block;
+    width: 23px;
+    height: 3px;
+    margin: 4px 0px;
+    background: #E52818;
+    transition: all .35s;
+    border-radius: 100px;
+}
+
+.btnMenuActive ._1 {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.btnMenuActive ._2 {
+    opacity: 0;
+}
+
+.btnMenuActive ._3 {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+header nav {
+    display: none;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav li a {
+    padding: 10px;
+    color: #EBEAE3;
+    text-transform: uppercase;
+    font-family: "Anton", sans-serif;
+    font-size: 1.2em;
+    transition: all .5s;
+}
+
+header nav li.active a,
+header nav li a:hover {
+    color: #FF9E19;
+}
+
+@media(min-width: 690px) {
+    header {
+        flex-direction: row;
+        padding: 0 8%;
+    }
+
+    #btn-menu {
+        display: none;
+    }
+
+    header nav {
+        display: block;
+    }
+}
+
+/*********************
+.hero
+*********************/
+.hero {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: #E52818;
+    overflow: hidden;
+    position: relative;
+    padding-top: 40px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    background-image: url('../assets/logotipo/images/pizza-on-tray.png');
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: -230px 280px;
+    overflow: hidden;
+}
+
+.hero ._1 {
+    flex: 1.5 !important;
+}
+
+.hero ._1,
+.hero ._2 {
+    flex: 1;
+    position: relative;
+    height: 100%;
+}
+
+.hero ._1 {
+    overflow: hidden !important;
+}
+
+.hero ._1 .motoboy {
+    width: 220px;
+    z-index: 1001;
+    position: absolute;
+    right: 0;
+    top: 80px;
+}
+
+.hero ._2 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 9%;
+}
+
+.hero ._2 h1 {
+    color: #EBEAE3;
+    font-family: "Anton", sans-serif;
+    font-size: 2.8em;
+    text-transform: uppercase;
+    line-height: 1.4;
+}
+
+.hero ._2 h1 span {
+    color: #FF9E19;
+}
+
+.hero ._2 .large-text {
+    color: #EBEAE3;
+    font-family: "Manrope";
+    font-size: .95em;
+}
+
+.hero ._2 .btn {
+    color: black;
+    background: #FF9E19;
+    border-radius: 2px;
+    font-family: "Anton", sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    margin: 15px 0;
+    max-width: 202px;
+}
+
+.hero ._2 .btn img {
+    width: 1.2em;
+    margin-right: 5px;
+}
+
+.hero ._2 .small-text {
+    color: #EBEAE3;
+    font-family: "Manrope";
+    font-size: .90em;
+}
+
+.hero ._2 .follow-us {
+    position: absolute;
+    bottom: 20px;
+    right: 15%;
+    float: right;
+}
+
+.hero ._2 .follow-us a {
+    margin: 0 8px;
+}
+
+.hero ._2 .follow-us a img {
+    width: 25px;
+}
+
+.hero ._2 .motoboy {
+    display: none;
+}
+
+@media(max-width: 690px) {
+    .hero ._2 {
+        justify-content: flex-start;
+    }
+
+    .hero ._2 .btn {
+        align-self: flex-end;
+        border-radius: 20px;
+        padding: 12px 18px;
+        font-size: 1.05em;
+        border: 2px solid black;
+    }
+
+    .follow-us {
+        display: none;
+    }
+
+    .hero ._1 {
+        display: none;
+    }
+
+    .hero ._2 .motoboy {
+        display: block;
+        align-self: flex-end;
+        width: 160px;
+    }
+
+    .hero ._2 .small-text {
+        align-self: flex-end;
+    }
+}
+
+@media(min-width: 690px) {
+    .hero {
+        height: calc(100vh - 100px);
+        flex-direction: row;
+        padding-top: 0;
+    }
+
+    .hero ._2 {
+        flex: 2;
+    }
+
+    .hero ._2 h1 {
+        font-size: 3em;
+    }
+}
+
+@media(min-width: 768px) {
+    .hero {
+        height: calc(100vh - 100px);
+    }
+
+    .hero::before {
+        background-size: 600px;
+        background-position: -150px 80px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .hero::before {
+        background-size: 700px;
+        background-position: -100px 70px;
+    }
+
+    .hero ._1,
+    .hero ._2 {
+        flex: 1;
+    }
+
+    .hero ._2 {
+        padding-left: 4%;
+        padding-right: 10%;
+    }
+
+    .hero ._2 .large-text {
+        padding: 10px 0;
+    }
+}
+
+@font-face {
+    font-family: 'Hestina';
+    src: url('../css/fonts/Hestina.otf');
+}
+
+@font-face {
+    font-family: 'Anton';
+    src: url('../css/fonts/Anton-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../css/fonts/Manrope-Light.ttf');
+}

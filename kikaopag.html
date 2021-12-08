@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" href="assets/logotipo/forno.jpg">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+	<link rel="stylesheet" href="css/owl/owl.carousel.min.css" />
+	<link rel="stylesheet" href="css/owl/owl.theme.default.min.css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/grid.css" />
+	<link rel="stylesheet" href="css/cardapionew.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+
+
+
+	<link rel="stylesheet" type="text/css" href="css/estilo-home.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2? family = Rock + Salt & display = swap" rel="folha de estilo">
+
+	<title>Na chapa e no forno</title>
+
+
+	<style>
+		/* TAMANHO DA IMG DO CARDAPIO */
+		.img-card {
+			width: 350px;
+			height: 350px;
+		}
+	</style>
+
+</head>
+
+<body>
+	<style>
+		.btn {
+			border: 2px solid #FAD02C;
+			background: none;
+			color: #FAD02C;
+			padding: 20px 40px;
+			font-size: 15px;
+			text-transform: uppercase;
+			cursor: pointer;
+			transition: all 0.5s;
+			position: relative;
+			color: #FAD02C;
+			overflow: hidden;
+		}
+
+		.btn:hover {
+			color: #be1e2d;
+		}
+
+		.btn:before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #FAD02C;
+			z-index: -1;
+			border-radius: 50% 50% 0% 0%;
+			height: 0%;
+			transition: all 0.5s;
+		}
+
+		.btn:hover:before {
+			height: 100%;
+		}
+	</style>
+	<!--==========================================================
+                                 MENU DE NAVEGAÇÃO
+            ==========================================================-->
+
+	<div id="header">
+
+
+		<div class="container">
+
+			<h2 class="titulo-chapa"></h2>
+			<nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+				<a class="navbar-brand rounded mx-auto d-block" href="pedido.php">
+					<img width="70%" src="assets/logotipo/forno-removebg-preview.png" class="img-fluid rounded mx-auto d-block logo " />
+
+				</a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="sanduiches.php">Sanduíches</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="kikaopag.php">Kikão</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="pizzaespecial.php">Pizza Especiais</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="pizzatra.php">Pizza Tradicionais</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.php">sair</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+		</div>
+	</div>
+
+	<!--==========================================================
+                                   //FIM DO MENU DE NAVEGAÇÃO 
+            ==========================================================-->
+
+
+
+	<!--==========================================================
+                                    CARDAPIO
+            ==========================================================-->
+	<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+		<div class="toast-header">
+			<img src="..." class="rounded me-2" alt="...">
+			<strong class="me-auto">Bootstrap</strong>
+			<small>11 mins ago</small>
+			<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+		</div>
+		<div class="toast-body">
+			Hello, world! This is a toast message.
+		</div>
+	</div>
+	<main class="center_xs">
+		<section class="well well__ins center_xs">
+			<div class="container">
+
+
+				<!--==========================================================
+                                            CARDAPIO  DE KIKÃO
+                                   ==========================================================-->
+
+				<h3 class="center clr-default title text-center "><br><br>Kikão</h3><br><br>
+
+				<div class='row wow fadeInRight'>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="row">
+							<div class="col-md-6 col-sm-12 col-xs-12">
+
+								<img src="https://instadelivery-public.nyc3.digitaloceanspaces.com/itens/ca8WitjGDfrnfUCmUAXtueckxnKVsgWOdgqQVDU7.jpeg" style="width: 270px; height: 204px;">
+
+							</div>
+							<div class="col-md-6 col-sm-12 col-xs-12">
+								<h6>
+									KIKÃO SIMPLES </h6>
+
+								<p class="l-height">Pão, </p>
+								<h6>R$ 4,00</h6>
+								<button class="btn" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">COMPRAR</button>
+							</div>
+						</div>
+					</div>
+
+					<!--==========================================================
+                                            MODAL KIKÃO SIMPLES
+                                   ==========================================================-->
+
+					<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">FINALIZAR PEDIDO</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<form>
+										<div class="modal-body">
+											<h6 class="modal-title" id="staticBackdropLabel">Descrição do pedido</h6>
+										</div>
+										<div class="mb-6">
+											<input type="number" class="form-control" id="" name="" placeholder="Quantidade do pedido" required>
+										</div><br>
+
+										<div class="mb-6 ">
+											<input type="number" class="form-control" id="" name="" placeholder="Gostaria de retirar algo?" required>
+											<span style="color: red;">OBS: CASO FOR RETIRAR ALGO VALOR SERÁ ALTERADO NA ENTREGA</span>
+										</div><br>
+
+										<div class="mb-6 ">
+											<input type="number" class="form-control" id="" name="" placeholder="Gostaria de retirar algo?" required>
+											<span style="color: red;">OBS: CASO FOR RETIRAR ALGO VALOR SERÁ ALTERADO NA ENTREGA</span>
+										</div><br>
+									</form>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Send message</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!------------------------------------------------------------------------>
+
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="row">
+							<div class="col-md-6 col-sm-12 col-xs-12">
+
+								<img src="https://digamaria.com/wp-content/uploads/2013/01/cachorro-quente-021.jpg" style="width: 270px; height: 204px;">
+
+							</div>
+							<div class="col-md-6 col-sm-12 col-xs-12">
+								<h6>
+									KIKÃO QUEIJO </h6>
+
+								<p class="l-height">Pão, filé de frango, dois queijos, alface, tomate, catupiry</p>
+								<h6>R$ 5,00</h6>
+								<button class="btn" type="submit">COMPRAR</button>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='row wow fadeInLeft'>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="row">
+							<div class="col-md-6 col-sm-12 col-xs-12">
+
+								<img src="https://www.dicasdemulher.com.br/wp-content/uploads/2018/03/cachorro-quente-3.jpg" style="width: 270px; height: 204px;">
+
+							</div>
+							<div class="col-md-6 col-sm-12 col-xs-12">
+								<h6>
+									KIKÃO BACON E QUEIJO </h6>
+
+								<p class="l-height">Pão, duas salsichas, queijo, alface, tomate, ovo</p>
+								<h6>R$ 6,00</h6>
+								<button class="btn" type="submit">COMPRAR</button>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="row">
+							<div class="col-md-6 col-sm-12 col-xs-12">
+
+								<img src="https://rondoniaovivo.com/imagensNoticias/dia-do-cachorro-quente-confira-mapa-com-os-dogs-de-brasilia-c59f.jpg" style="width: 270px; height: 204px;">
+
+							</div>
+							<div class="col-md-6 col-sm-12 col-xs-12">
+								<h6>
+									KIKÃO CALABRESA E QUEIJO </h6>
+
+								<p class="l-height">Pão, quatro presuntos, quatro queijos, ovo</p>
+								<h6>R$ 6,00</h6>
+								<button class="btn" type="submit">COMPRAR</button>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='row wow fadeInRight'>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="row">
+							<div class="col-md-6 col-sm-12 col-xs-12">
+
+								<img src="https://d1ralsognjng37.cloudfront.net/b4ad576a-eb2f-4a9a-9368-8c60862d0948.jpeg" style="width: 270px; height: 204px;">
+
+							</div>
+							<div class="col-md-6 col-sm-12 col-xs-12">
+								<h6>
+									KIKÃO PRESUNTO E QUEIJO </h6>
+
+								<p class="l-height">Pão de forma, dois presuntos e dois queijos</p>
+								<h6>R$ 6,00</h6>
+								<button class="btn" type="submit">COMPRAR</button>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+
+			</div>
+		</section>
+	</main>
+
+
+
+	<div class="row">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<a href="https://api.whatsapp.com/send?phone=55092984005764" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+  z-index:1000;" target="_blank">
+			<i style="margin-top:16px" class="fa fa-whatsapp"></i>
+		</a>
+	</div>
+	<!--==========================================================
+                                     FIM DO CARDAPIO
+            ==========================================================-->
+
+
+
+	<!--==========================================================
+                                         RODAPÉ
+             ==========================================================-->
+
+	<div class="footer">
+		<div class="inner-footer">
+
+			<!--==========================================================
+                            DESCRIÇÃO LADO ESQUERDO DO RODAPÉ
+             ==========================================================-->
+
+			<div class="footer-items">
+				<h1>NA CHAPA E NO FORNO</h1>
+				<p> não fez seu pedido? Corra e vem fazer seu pedido pelo nosso site.</p>
+			</div>
+
+			<!--==========================================================
+                            MENU DE NAVEGAÇÃO DAS PAGINAS
+             ==========================================================-->
+
+			<div class="footer-items">
+				<h3>PAGINAS</h3>
+				<div class="border1"></div>
+				<!--for the underline -->
+				<ul>
+					<a href="index.html">
+						<li>Home</li>
+					</a>
+					<a href="sobre.html">
+						<li>Cardápio</li>
+					</a>
+					<a href="promocao.html">
+						<li>Promoções</li>
+					</a>
+				</ul>
+			</div>
+
+			<!--==========================================================
+                         LINK PARA OS PEDIDOS
+             ==========================================================-->
+
+
+			<div class="footer-items">
+				<h3>SEJA MEMBRO</h3>
+				<div class="border1"></div>
+				<!--for the underline -->
+				<ul>
+					<a href="newconta.html" target="_blank">
+						<li>Cadastre-se</li>
+					</a>
+					<a href="login.html" target="_blank">
+						<li>Fazer Pedido</li>
+					</a>
+				</ul>
+			</div>
+
+			<!--==========================================================
+                        ENDEREÇO DO LANCHE
+             ==========================================================-->
+
+
+			<div class="footer-items">
+				<h3>CONTATO</h3>
+				<div class="border1"></div>
+				<ul>
+					<li><i class="fa fa-map-marker" aria-hidden="true"></i>Rua:Caio Julio Cesar - Adrianopolis/Manaus<br><br></li>
+					<li><i class="fa fa-phone" aria-hidden="true"></i>(92)99466 6034 / (92) 99614 0986<br><br></li>
+					<li><i class="fa fa-envelope" aria-hidden="true"></i>xyz@gmail.com</li>
+				</ul>
+
+				<!--==========================================================
+                        LINKS DA REDE SOCIAL DO LANCHE
+             ==========================================================-->
+
+				<div class="social-media">
+					<a href="https://instagram.com/chapaeforno?utm_medium=copy_link"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-facebook"></i></a>
+					<a href="#"><i class="fab fa-google-plus-square"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<!--==========================================================
+                        FUNDADOR
+      ==========================================================-->
+
+		<div class="footer-bottom">
+			Imagens meramente ilustrativas. Copyright &copy; Todos os direitos reservados <br> Desenvolvido por Samuel Souza 2021<br>versão 1.0
+		</div>
+	</div>
+
+	<!--==========================================================
+                     FIM DO RODAPÉ
+      ==========================================================-->
+
+
+
+	<!--==========================================================
+                BOTÃO PARA SUBIR AO TOPO DA PAGINA
+      ==========================================================-->
+
+
+	<a id="subirTopo">
+		<img class="img-topo" src="https://c.tenor.com/8m4sSqF0nGIAAAAj/hamburger-joypixels.gif">
+		<p><br>&nbsp;&nbsp;Subir</p>
+	</a>
+
+	<style>
+		#subirTopo {
+			text-decoration: none;
+			bottom: 30px;
+			right: 30px;
+			color: #fff;
+			text-align: center;
+			cursor: pointer;
+			padding: 15px;
+			font-size: 15px;
+			font-weight: bold;
+			text-transform: uppercase;
+			position: fixed;
+			border: 0;
+			font-family: sans-serif;
+			opacity: .8;
+		}
+
+		.img-topo {
+			width: 50px;
+			height: 50px;
+		}
+
+		#subirTopo:hover {
+			opacity: 1;
+		}
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+
+			jQuery("#subirTopo").hide();
+
+			jQuery('a#subirTopo').click(function() {
+				jQuery('body,html').animate({
+					scrollTop: 0
+				}, 800);
+				return false;
+			});
+
+			jQuery(window).scroll(function() {
+				if (jQuery(this).scrollTop() > 1000) {
+					jQuery('#subirTopo').fadeIn();
+				} else {
+					jQuery('#subirTopo').fadeOut();
+				}
+			});
+		});
+	</script>
+
+	<!--==========================================================
+               FIM BOTÃO PARA SUBIR AO TOPO DA PAGINA
+      ==========================================================-->
+
+	<!--JS-->
+	<!--JS-->
+	<!--Importando Script Jquery cep-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/cepform.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/magnify/jquery.magnific-popup.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
